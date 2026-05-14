@@ -1,5 +1,4 @@
-const nextMatch = new Date("May 20, 2026 17:00:00").getTime();
-
+const nextMatch = new Date("May 17, 2026 17:30:00").getTime();
 const timer = setInterval(function(){
 
   const now = new Date().getTime();

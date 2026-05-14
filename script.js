@@ -1,5 +1,6 @@
 const nextMatch = new Date("May 17, 2026 17:30:00").getTime();
-const timer = setInterval(function(){
+
+const timer = setInterval(function () {
 
   const now = new Date().getTime();
 
@@ -23,17 +24,17 @@ const timer = setInterval(function(){
   );
 
   document.getElementById("timer").innerHTML =
-    days + "d "
-    + hours + "h "
-    + minutes + "m "
-    + seconds + "s ";
+    days + " Days "
+    + hours + " Hours "
+    + minutes + " Minutes "
+    + seconds + " Seconds ";
 
-  if(distance < 0){
+  if (distance < 0) {
 
     clearInterval(timer);
 
     document.getElementById("timer").innerHTML =
-    "MATCH STARTED";
+      "THE MATCH HAS STARTED";
   }
 
-},1000);
+}, 1000);
